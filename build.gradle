@@ -3,12 +3,12 @@ apply plugin: 'groovy'
 repositories {
     mavenCentral()
     mavenLocal()
-    maven { url 'http://repo.kiy0taka.org/' }
+    mavenRepo url:'http://repo.kiy0taka.org/'
 }
 
 dependencies {
     groovy 'org.codehaus.groovy:groovy-all:2.0.6'
-    testCompile 'org.kiy0taka.spock:spock-shell:0.2'
+    testCompile 'org.kiy0taka.spock:spock-shell:0.3'
 }
 
 task wrapper(type: Wrapper) {
